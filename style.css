@@ -73,11 +73,15 @@ img{
     .teaming-up::before{
         border-bottom: hidden;
     }
+    .teaming-up{
+        height: auto;
+    }
     .right-teaming{
         order: 1;
     }
     .left-teaming{
         order: 2;
+        margin: 20px 0;
     }
     .right-teaming img{
         padding: 10px 20px;
