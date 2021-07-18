@@ -30,9 +30,13 @@ img{
     text-align: center;
 }
 .intro{
-    position: relative;
     margin-top: 85px;
     z-index: -2;
+}
+.intro-text a{
+    clip-path: polygon(12% 0%, 98% 0, 98% 60%, 87% 98%, 0 98%, 0% 41%);
+    background-color: #e7082d;
+    padding: 15px 30px;
 }
 /* About */
 .bg-about{
@@ -42,9 +46,40 @@ img{
     color: #fff;
     font-weight: 500;
 }
-.intro-text a{
-    clip-path: polygon(12% 0%, 98% 0, 98% 60%, 87% 98%, 0 98%, 0% 41%);
-    background-color: #e7082d;
+/* Teaming-up */
+.teaming-up{
+    height: 392px;
+    overflow: hidden;
+    background: #000;
+}
+.teaming-up::before{
+    border-bottom: 392px solid #000;
+    border-right: 160px solid transparent;
+    content: "";
+    height: 0;
+    left: 41.55%;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    display: block;
+}
+.right-teaming{
+    overflow: hidden;
+}
+.right-teaming img{
+    transform: scale(1.25);
 }
 @media only screen and (max-width: 688px){
+    .teaming-up::before{
+        border-bottom: hidden;
+    }
+    .right-teaming{
+        order: 1;
+    }
+    .left-teaming{
+        order: 2;
+    }
+    .right-teaming img{
+        padding: 10px 20px;
+    }
 }
