@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body{
+    background: linear-gradient(#0051ff5b, #4c00ff67), url(images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Anton', sans-serif;
+}
+img{
+    width: 100%;
+}
+.text-justify{
+    text-align: justify;
+}
+.navbar{
+    background-color: #000000a1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.container-fluid a>img{
+    width: 90px;
+}
+.nav-item a{
+    color: #ffc400 !important;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+.intro{
+    position: relative;
+    margin-top: 85px;
+    z-index: -2;
+}
+/* About */
+.bg-about{
+    background: linear-gradient(80deg, #0008ff52, #66080500), url(https://swall.teahub.io/photos/small/3-36810_spiderman-1920-wallpaper-spiderman-web-background-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-weight: 500;
+}
+.intro-text a{
+    clip-path: polygon(12% 0%, 98% 0, 98% 60%, 87% 98%, 0 98%, 0% 41%);
+    background-color: #e7082d;
+}
+@media only screen and (max-width: 688px){
+}
